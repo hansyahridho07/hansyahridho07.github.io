@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- header -->
+    <header>
+        <img src="https://i.pinimg.com/originals/83/be/c1/83bec1d3b4e093a9ebcca549ae82d82f.png" alt="">
+        <h1><span class="judul">Sasageyo</span> Fans</h1>
+        <div id="data_pengunjung">
+            <label class="kiri">username: <span id="result1"></span></label>
+            <label class="kanan">email: <span id="result2"></span></label>
+        </div>
+    </header>
+    <!-- main -->
+    <main>
+        <h1>LIST ANIME</h1>
+        <div class="card">
+            <section class="download">
+                <label class="cara-download">link download: <span class="none"><a id="download" target="_blank"></a></span></label>
+                <label class="deskripsi-download"><i>*silahkan klik link di bawah terlebih dahulu</i></label>
+                <!-- <input type="text" id="download" readonly> -->
+            </section>
+            <div class="card-child">
+                <img src="https://i.pinimg.com/736x/ba/17/58/ba1758f85618d5022590cef56cb155d6.jpg" alt="">
+                <h3><a href="#" onclick="linkDownload(1)">Shingeki No Kyojin Season 4</a></h3>
+                <p class="episode bold">Episode 1</p>
+                <p class="episode">Release on: 1 hour ago</p>
+                <p class="deskripsi">Attack on Titan berkisah tentang suatu zaman dimana umat manusia menghadapi ancaman kepunahan akibat serangan para Titan (manusia raksasa). Yang mengerikan adalah para Titan ini benar-benar sengaja mengincar manusia untuk “dimakannya”.</p>
+            </div>
+            <div class="card-child">
+                <img src="https://upload.wikimedia.org/wikipedia/en/0/07/Noblesse_%28manhwa%29_Cover.jpg" alt="">
+                <h3><a href="#" onclick="linkDownload(2)">Nobeless</a></h3>
+                <p class="episode bold">Episode 7</p>
+                <p class="episode">Release on: 8 hour ago</p>
+                <p class="deskripsi"> Raizel terbangun dari tidur panjangnya selama 820 tahun. Dia memegang gelar khusus Noblesse, Noble berdarah murni dan pelindung semua Noble lainnya. Untuk melindungi Raizel, pelayannya Frankenstein mendaftarkannya di sekolah yang bernama (SMA) Ye Ran. Di sekolah, Raizel menjalani rutinitas biasanya dan beradaptasi dengan kehidupan manusia.</p>
+            </div>
+            <div class="card-child">
+                <img src="https://wibudesu.com/wp-content/uploads/2020/09/101926.jpg" alt="">
+                <h3><a href="#" onclick="linkDownload(3)">Made In Abyss</a></h3>
+                <p class="episode bold">Movie 3</p>
+                <p class="episode">Release on: yesterday</p>
+                <p class="deskripsi">Made in Abyss menceritakan seorang gadis yatim piatu bernama Riko tinggal di Panti Asuhana Belchero di kota Orth yang menemukan dan berteman dengan sebuah robot bernama Reg yang menyerupai manusia dan bereksplorasi dengannya ke dalam Abyss untuk mencari ibunya.</p>
+            </div>
+        </div>
+    </main>
+    <aside>
+        <span>
+            <img src="https://i.pinimg.com/originals/83/be/c1/83bec1d3b4e093a9ebcca549ae82d82f.png" alt="">
+            <h5>Anime Song</h5>
+        </span>
+        <audio id="audio">
+            <source src="Lagu/Din don dan.mp3" type="audio/mpeg">
+        </audio>
+        <button id="playPause" onclick="pausePlay()" class="button blue">Play &#9658;</button>
+        <button onclick="stop()" class="button red">Stop &#9611;</button>
+    </aside>
+    
+    <section id="movie">
+        <h2>Upcoming Movie</h2>
+        <div class="card-movie">
+            <img src="https://musicart.xboxlive.com/7/cfcb5000-0000-0000-0000-000000000002/504/image.jpg?w=1920&h=1080" alt="">
+            <h4>No Game No Live Movie</h4>
+            <h5>Genre: Comedy, Action, Fantasy</h5>
+            <h5 class="gray">Feb 18, 2021</h5>
+        </div><br><br>
+        <div class="card-movie">
+            <img src="https://upload.wikimedia.org/wikipedia/id/1/13/DB_THE_MOVIE_NO._20.jpg" alt="">
+            <h4>Dragon Ball Super: Broly</h4>
+            <h5>Genre: Comedy, Action, Super Power</h5>
+            <h5 class="gray">Feb 20, 2021</h5>
+        </div><br><br>
+        <div class="card-movie">
+            <img src="https://upload.wikimedia.org/wikipedia/en/thumb/0/0b/Your_Name_poster.png/220px-Your_Name_poster.png" alt="">
+            <h4>Kimi No Nawa</h4>
+            <h5>Genre: Romance, Mellow, Drama</h5>
+            <h5 class="gray">Apr 07, 2021</h5>
+        </div>
+    </section>
+    <!-- footer -->
+    <footer>
+        <h4>&copy; Sasageyo Fans @ Muhammad Ridho Hansyah</h4>
+    </footer>
+</body>
+
+<script src="script.js"></script>
+</html>
